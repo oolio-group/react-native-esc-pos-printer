@@ -24,8 +24,6 @@ jobs:
         scope: "@oolio-group"
     - name: Install Node Dependencies
       run: npm install
-    - name: Download & Build Icons
-      run: npm ci --progress=false && npm run generate
     - name: Publish package
       run: npm publish
       env:
