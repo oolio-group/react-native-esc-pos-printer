@@ -1,6 +1,6 @@
 {
   "name": "@oolio-group/react-native-esc-pos-printer",
-  "version": "2.2.1",
+  "version": "2.2.4",
   "description": "test",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
@@ -39,7 +39,10 @@
     "ios",
     "android"
   ],
-  "repository": "https://github.com/oolio-group/react-native-esc-pos-printer",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oolio-group/react-native-esc-pos-printer.git"
+  },
   "author": "Aliaksei Astafyeu <lochost40@gmail.com> (https://github.com/tr3v3r)",
   "license": "MIT",
   "bugs": {
@@ -47,7 +50,7 @@
   },
   "homepage": "https://github.com/tr3v3r/react-native-esc-pos-printer#readme",
   "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
+   "registry": "https://npm.pkg.github.com/"
   },
   "dependencies": {
     "buffer": "6.0.3",
