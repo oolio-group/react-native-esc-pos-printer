@@ -1,5 +1,5 @@
 {
-  "name": "react-native-esc-pos-printer",
+  "name": "@oolio-group/react-native-esc-pos-printer",
   "version": "2.2.1",
   "description": "test",
   "main": "lib/commonjs/index",
@@ -39,7 +39,7 @@
     "ios",
     "android"
   ],
-  "repository": "https://github.com/tr3v3r/react-native-esc-pos-printer",
+  "repository": "https://github.com/oolio-group/react-native-esc-pos-printer",
   "author": "Aliaksei Astafyeu <lochost40@gmail.com> (https://github.com/tr3v3r)",
   "license": "MIT",
   "bugs": {
