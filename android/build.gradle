@@ -15,9 +15,11 @@ def isNewArchitectureEnabled() {
 
 apply plugin: 'com.android.library'
 
-if (isNewArchitectureEnabled()) {
-  apply plugin: 'com.facebook.react'
-}
+// Apply the RN codegen plugin unconditionally: RN's autolinking discovers this
+// module's `libraryName` by regexing this file's text (findLibraryName.js), not by
+// evaluating isNewArchitectureEnabled(), so it always expects codegen output here
+// regardless of the consuming app's newArchEnabled setting.
+apply plugin: 'com.facebook.react'
 
 def getExtOrDefault(name) {
   return rootProject.ext.has(name) ? rootProject.ext.get(name) : project.properties['EscPosPrinter_' + name]
@@ -131,10 +133,8 @@ dependencies {
 // From node_modules
 }
 
-if (isNewArchitectureEnabled()) {
-  react {
-    jsRootDir = file("../src/")
-    libraryName = "EscPosPrinter"
-    codegenJavaPackageName = "com.reactnativeescposprinter"
-  }
+react {
+  jsRootDir = file("../src/")
+  libraryName = "EscPosPrinter"
+  codegenJavaPackageName = "com.reactnativeescposprinter"
 }
