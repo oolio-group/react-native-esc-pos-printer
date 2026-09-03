@@ -1,6 +1,6 @@
 {
   "name": "@oolio-group/react-native-esc-pos-printer",
-  "version": "2.2.4",
+  "version": "2.3.0",
   "description": "test",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
